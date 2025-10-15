@@ -8,6 +8,7 @@ export const wrapper = style({
   display: 'flex',
   justifyContent: 'center',
   overflowX: 'hidden',
+  pointerEvents: 'none',
 });
 
 export const astronaut = style({
