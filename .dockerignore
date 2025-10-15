@@ -1,0 +1,17 @@
+node_modules
+dist
+.vite
+.cache
+logs
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+.git
+.gitignore
+.gitattributes
+.github
+.gitlab
