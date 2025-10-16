@@ -19,9 +19,7 @@ export function PersonalProject(props: WorkProps) {
 
   return (
     <article>
-      <div className={thumbnailStyle}>
-        {thumbnail && <img className={image} src={thumbnail} alt={name} />}
-      </div>
+      <Thumbnail src={thumbnail} alt={name} to={links[0]?.to} />
       <h4 className={title}>{name}</h4>
       <p className={descriptionStyle}>{description}</p>
       <ul className={linksStyle}>
@@ -32,5 +30,25 @@ export function PersonalProject(props: WorkProps) {
         ))}
       </ul>
     </article>
+  );
+}
+
+interface ThumbnailProps {
+  src?: string;
+  alt: string;
+  to?: string;
+}
+
+function Thumbnail(props: ThumbnailProps) {
+  const { src, alt, to } = props;
+
+  return to ? (
+    <a className={thumbnailStyle} href={to}>
+      {src && <img className={image} src={src} alt={alt} />}
+    </a>
+  ) : (
+    <div className={thumbnailStyle}>
+      {src && <img className={image} src={src} alt={alt} />}
+    </div>
   );
 }

@@ -8,7 +8,7 @@ export function Projects() {
       <div className={grid}>
         <PersonalProject
           name='Flowness'
-          description='React library to control complex application flows.'
+          description='React library to control complex application flows. Built with TypeScript.'
           thumbnail='projects/flowness.webp'
           links={[
             { label: 'github', to: 'https://github.com/tyeongkim/flowness' },
@@ -22,8 +22,16 @@ export function Projects() {
           links={[]}
         />
         <PersonalProject
+          name='Sotto'
+          description='Write your diary, share with friends safely. Built with React and Rust.'
+          thumbnail='projects/sotto.webp'
+          links={[
+            { label: 'github', to: 'https://github.com/tyeongkim/sotto-app' },
+          ]}
+        />
+        <PersonalProject
           name='Personal Site'
-          description='Introducing myself to the whole world.'
+          description='Introducing myself to the whole world. Built with React and Vanilla Extract.'
           thumbnail='projects/www.webp'
           links={[{ label: 'github', to: 'https://github.com/tyeongkim/www' }]}
         />

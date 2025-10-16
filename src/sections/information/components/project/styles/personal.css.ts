@@ -2,6 +2,7 @@ import { style } from '@vanilla-extract/css';
 import { color } from '@/styles/color.css';
 
 export const thumbnail = style({
+  display: 'block',
   maxWidth: 320,
   backgroundColor: '#2A2A2A',
   aspectRatio: '16 / 9',
