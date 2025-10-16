@@ -8,8 +8,7 @@ globalStyle('html, body', {
   backgroundColor: '#101010',
   color: color.text.main,
   WebkitOverflowScrolling: 'touch',
-  overscrollBehaviorY: 'none',
-  padding: 'env(safe-area-inset)',
+  scrollBehavior: 'smooth',
 });
 
 globalStyle('*', {

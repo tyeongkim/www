@@ -1,8 +1,10 @@
 import { face, greeting, introduction } from './styles.css';
 
+const sectionId = 'profile';
+
 export function Profile() {
   return (
-    <div>
+    <div id={sectionId}>
       <img className={face} src='assets/face.webp' alt='My face' />
       <h2 className={greeting}>
         Hi, I’m Taeyeong Kim — <br />
