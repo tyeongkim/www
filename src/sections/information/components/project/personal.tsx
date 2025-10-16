@@ -43,7 +43,7 @@ function Thumbnail(props: ThumbnailProps) {
   const { src, alt, to } = props;
 
   return to ? (
-    <a className={thumbnailStyle} href={to}>
+    <a className={thumbnailStyle} href={to} target='_blank'>
       {src && <img className={image} src={src} alt={alt} />}
     </a>
   ) : (
