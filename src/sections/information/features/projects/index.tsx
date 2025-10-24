@@ -19,7 +19,7 @@ export function Projects() {
           name='Torln'
           description='The highly secure messenger platform. (Under development)'
           thumbnail='projects/torln.webp'
-          links={[]}
+          links={[{ label: 'github', to: 'https://github.com/torlnapp' }]}
         />
         <PersonalProject
           name='Sotto'
